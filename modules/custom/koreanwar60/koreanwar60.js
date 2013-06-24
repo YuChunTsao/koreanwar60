@@ -12,6 +12,30 @@ function koreanwar60_deviceready() {
    alert('koreanwar60_deviceready - ' + error);
  }
 }
+
+/**
+ * Implements hook_block_info().
+ */
+function koreanwar60_block_info() {
+  var blocks = {
+    'footer':{
+      'delta':'footer',
+      'module':'koreanwar60',
+    },
+  };
+  return blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function koreanwar60_block_view(delta) {
+  var content = '';
+  if (delta == 'footer') {
+    content = '<h2>60th Anniversary</h2>';
+  }
+  return content;
+}
  
 /**
  * Implements hook_menu().
@@ -19,10 +43,6 @@ function koreanwar60_deviceready() {
 function koreanwar60_menu() {
   try {
     var items = {
-      'home':{
-        'title':'Home',
-        'page_callback':'koreanwar60_home_page'
-      },
       'kw60_content/%':{
         'page_callback':'koreanwar60_content_page',
         'page_arguments':[1]
@@ -52,6 +72,9 @@ function koreanwar60_content_page(page) {
   try {
     var page_title = '';
     switch (page) {
+      case 'home':
+        page_title = 'Heroes Remembered';
+        break;
       case 'rsvp':
         page_title = 'RSVP';
         break;

@@ -11,7 +11,7 @@ drupalgap.settings = {
   
   /* App Information */
   'title':'Korean War 60th Anniversary',
-  'front':'home',
+  'front':'kw60_content/home',
   
   /* Language */
   'language':'und',
@@ -57,6 +57,7 @@ drupalgap.settings = {
         'main':{}
       },
       'footer':{
+        'footer':{}
       },
     },
   },
