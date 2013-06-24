@@ -22,6 +22,10 @@ function koreanwar60_menu() {
       'home':{
         'title':'Home',
         'page_callback':'koreanwar60_home_page'
+      },
+      'kw60_content/%':{
+        'page_callback':'koreanwar60_content_page',
+        'page_arguments':[1]
       }
     };
     return items;
@@ -44,3 +48,37 @@ function koreanwar60_home_page() {
   }
 }
 
+function koreanwar60_content_page(page) {
+  try {
+    var page_title = '';
+    switch (page) {
+      case 'rsvp':
+        page_title = 'RSVP';
+        break;
+      case 'hotels':
+        page_title = 'Hotels';
+        break;
+      case 'parking':
+        page_title = 'Parking';
+        break;
+      case 'transportation':
+        page_title = 'Transportation';
+        break;
+      case 'security':
+        page_title = 'Security';
+        break;
+      case 'general_info':
+        page_title = 'General Info';
+        break;
+      default:
+        return 'koreanwar60_content_page - unknown page (' + page + ')';
+        break;
+    }
+    drupalgap_set_title(page_title);
+    var page_file_path = drupalgap_get_path('module', 'koreanwar60') + '/pages/' + page + '.html';
+    return drupalgap_file_get_contents(page_file_path);
+  }
+  catch (error) {
+    alert('koreanwar60_content_page - ' + error);
+  }
+}

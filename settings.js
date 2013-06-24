@@ -64,7 +64,12 @@ drupalgap.settings = {
   /* Menus */
   'menus':{
     'main_menu':{
-      'links':[],
+      'links':[
+        {'title':'RSVP', 'path':'kw60_content/rsvp'},
+        {'title':'Hotels', 'path':'kw60_content/hotels'},
+        {'title':'Parking', 'path':'kw60_content/parking'},
+        {'title':'Transportation', 'path':'kw60_content/transportation'}
+      ],
     },
     /* Region menu links. */
     'regions':{
@@ -97,6 +102,32 @@ drupalgap.settings = {
           }
         ],
       },
+      'footer':{
+        'links':[
+          /* Info Button */
+          {
+            'title':'General Info',
+            'path':'kw60_content/general_info',
+            "options":{
+              "attributes":{
+                "data-icon":"info",
+                "class":"ui-btn-left"
+              }
+            }
+          },
+          /* Security Button */
+          {
+            'title':'Security',
+            'path':'kw60_content/security',
+            "options":{
+              "attributes":{
+                "data-icon":"star",
+                "class":"ui-btn-right"
+              }
+            }
+          }
+        ]
+      }
     }
   },
 };
