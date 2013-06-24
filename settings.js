@@ -10,8 +10,8 @@ drupalgap.settings = {
   'clean_urls':false, /* set to true if you have clean urls enabled on your site */
   
   /* App Information */
-  'title':'DrupalGap',
-  'front':'dashboard',
+  'title':'Korean War 60th Anniversary',
+  'front':'home',
   
   /* Language */
   'language':'und',
@@ -24,14 +24,14 @@ drupalgap.settings = {
   'debug_level':0, /* 0 = mild, 1 = medium (), 2 = spicy () */
   
   /* Theme */
-  'theme':'easystreet3',
+  'theme':'koreanwar60_theme',
   
   /* Logo */
   'logo':'',
   
   /* Blocks */
   'blocks':{
-    'easystreet3':{
+    'koreanwar60_theme':{
       'header':{
         'header':{}
       },
@@ -57,7 +57,6 @@ drupalgap.settings = {
         'main':{}
       },
       'footer':{
-        'powered_by':{}
       },
     },
   },
@@ -65,23 +64,7 @@ drupalgap.settings = {
   /* Menus */
   'menus':{
     'main_menu':{
-      'links':[
-        {'title':'Content','path':'node','options':{'attributes':{'data-icon':'star'}}},
-        {'title':'Taxonomy','path':'taxonomy/vocabularies','options':{'attributes':{'data-icon':'grid'}}},
-        {'title':'Users','path':'user-listing','options':{'attributes':{'data-icon':'info'}}},
-      ],
-    },
-    'user_menu_anonymous':{
-      'links':[
-        {'title':'Login','path':'user/login'},
-        {'title':'Register','path':'user/register'},
-      ],
-    },
-    'user_menu_authenticated':{
-      'links':[
-        {'title':'My Account','path':'user'},
-        {'title':'Logout','path':'user/logout'},
-      ],
+      'links':[],
     },
     /* Region menu links. */
     'regions':{

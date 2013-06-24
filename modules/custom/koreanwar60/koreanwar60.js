@@ -36,7 +36,8 @@ function koreanwar60_menu() {
  */
 function koreanwar60_home_page() {
   try {
-    return 'Hello World';
+    var logo_image_path = path_to_theme() + '/images/logo-korean-war-60.png';
+    return theme('image', {'path':logo_image_path});
   }
   catch (error) {
     alert('koreanwar60_home_page - ' + error);
