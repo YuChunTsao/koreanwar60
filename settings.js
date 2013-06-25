@@ -71,6 +71,7 @@ drupalgap.settings = {
         {'title':'Parking', 'path':'kw60_content/parking'},
         {'title':'Transportation', 'path':'kw60_content/transportation'}
       ],
+      "data-theme":"c"
     },
     /* Region menu links. */
     'regions':{
@@ -80,7 +81,13 @@ drupalgap.settings = {
           {
             'title':'Home',
             'path':'',
-            "options":{"attributes":{"data-icon":"home", "class":"ui-btn-left"}},
+            "options":{
+              "attributes":{
+                "data-icon":"home",
+                "class":"ui-btn-left",
+                "data-theme":"b"
+              }
+            },
             "pages":{
               "value":[''],
               "mode":"exclude",
@@ -93,7 +100,8 @@ drupalgap.settings = {
               "attributes":{
                 "data-icon":"back",
                 "class":"ui-btn-right",
-                "onclick":"javascript:drupalgap_back();"
+                "onclick":"javascript:drupalgap_back();",
+                "data-theme":"b"
               }
             },
             "pages":{
@@ -112,7 +120,8 @@ drupalgap.settings = {
             "options":{
               "attributes":{
                 "data-icon":"info",
-                "class":"ui-btn-left"
+                "class":"ui-btn-left",
+                "data-theme":"b"
               }
             }
           },
@@ -123,7 +132,8 @@ drupalgap.settings = {
             "options":{
               "attributes":{
                 "data-icon":"star",
-                "class":"ui-btn-right"
+                "class":"ui-btn-right",
+                "data-theme":"b"
               }
             }
           }

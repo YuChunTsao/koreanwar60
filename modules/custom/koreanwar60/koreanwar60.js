@@ -58,7 +58,7 @@ function koreanwar60_menu() {
 /**
  * Callback for home page.
  */
-function koreanwar60_home_page() {
+/*function koreanwar60_home_page() {
   try {
     var logo_image_path = path_to_theme() + '/images/logo-korean-war-60.png';
     return theme('image', {'path':logo_image_path});
@@ -66,7 +66,7 @@ function koreanwar60_home_page() {
   catch (error) {
     alert('koreanwar60_home_page - ' + error);
   }
-}
+}*/
 
 function koreanwar60_content_page(page) {
   try {
@@ -99,7 +99,12 @@ function koreanwar60_content_page(page) {
     }
     drupalgap_set_title(page_title);
     var page_file_path = drupalgap_get_path('module', 'koreanwar60') + '/pages/' + page + '.html';
-    return drupalgap_file_get_contents(page_file_path);
+    return drupalgap_file_get_contents(
+      page_file_path,
+      {
+        cache:false /* should be removed when app goes live */
+      }
+    );
   }
   catch (error) {
     alert('koreanwar60_content_page - ' + error);
