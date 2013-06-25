@@ -66,7 +66,7 @@ drupalgap.settings = {
   'menus':{
     'main_menu':{
       'links':[
-        {'title':'RSVP', 'path':'kw60_content/rsvp'},
+        /*{'title':'RSVP', 'path':'kw60_content/rsvp'},*/
         {'title':'Hotels', 'path':'kw60_content/hotels'},
         {'title':'Parking', 'path':'kw60_content/parking'},
         {'title':'Transportation', 'path':'kw60_content/transportation'}
