@@ -29,6 +29,11 @@ drupalgap.settings = {
   /* Logo */
   'logo':'',
   
+  /* Cache - Set to true when publishing app!*/
+  'cache':{
+    'theme_registry':true,
+  },
+  
   /* Blocks */
   'blocks':{
     'koreanwar60_theme':{
@@ -56,6 +61,9 @@ drupalgap.settings = {
       'content':{
         'main':{}
       },
+      'content_suffix':{
+        'footer_menu':{}
+      },
       'footer':{
         'footer':{}
       },
@@ -66,10 +74,10 @@ drupalgap.settings = {
   'menus':{
     'main_menu':{
       'links':[
-        /*{'title':'RSVP', 'path':'kw60_content/rsvp'},*/
-        {'title':'Hotels', 'path':'kw60_content/hotels'},
-        {'title':'Parking', 'path':'kw60_content/parking'},
-        {'title':'Transportation', 'path':'kw60_content/transportation'}
+        {'title':'Events', 'path':'kw60_content/events', options:{attributes:{"data-icon":"grid"}}},
+        {'title':'Hotels', 'path':'kw60_content/hotels', options:{attributes:{"data-icon":"grid"}}},
+        {'title':'Parking', 'path':'kw60_content/parking', options:{attributes:{"data-icon":"grid"}}},
+        {'title':'Transportation', 'path':'kw60_content/transportation', options:{attributes:{"data-icon":"grid"}}}
       ],
       "data-theme":"c"
     },
@@ -110,34 +118,6 @@ drupalgap.settings = {
             }
           }
         ],
-      },
-      'footer':{
-        'links':[
-          /* Info Button */
-          {
-            'title':'General Info',
-            'path':'kw60_content/general_info',
-            "options":{
-              "attributes":{
-                "data-icon":"info",
-                "class":"ui-btn-left",
-                "data-theme":"b"
-              }
-            }
-          },
-          /* Security Button */
-          {
-            'title':'Security',
-            'path':'kw60_content/security',
-            "options":{
-              "attributes":{
-                "data-icon":"star",
-                "class":"ui-btn-right",
-                "data-theme":"b"
-              }
-            }
-          }
-        ]
       }
     }
   },

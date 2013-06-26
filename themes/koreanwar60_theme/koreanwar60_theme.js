@@ -26,6 +26,11 @@ function koreanwar60_theme_info() {
             "data-role":"content"
           }
         },
+        "content_suffix":{
+          "attributes":{
+            "data-role":"navbar"
+          }
+        },
         "footer":{
           "attributes":{
             "data-role":"footer"
