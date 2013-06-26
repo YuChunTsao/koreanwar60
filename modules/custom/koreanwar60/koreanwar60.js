@@ -99,11 +99,12 @@ function koreanwar60_content_page(page) {
     }
     drupalgap_set_title(page_title);
     var page_file_path = drupalgap_get_path('module', 'koreanwar60') + '/pages/' + page + '.html';
+    var options = {
+      cache:false /* should be set to true when app goes live */
+    } ;
     return drupalgap_file_get_contents(
       page_file_path,
-      {
-        cache:false /* should be removed when app goes live */
-      }
+      options
     );
   }
   catch (error) {
