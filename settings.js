@@ -10,7 +10,7 @@ drupalgap.settings = {
   'clean_urls':false, /* set to true if you have clean urls enabled on your site */
   
   /* App Information */
-  'title':'Korean War 60th Anniversary',
+  'title':'Korean War',
   'front':'kw60_content/home',
   
   /* Language */
@@ -20,7 +20,7 @@ drupalgap.settings = {
   'file_public_path':'sites/default/files',
   
   /* Debug */
-  'debug':true, /* set to true to see console.log debug information */
+  'debug':false, /* set to true to see console.log debug information */
   'debug_level':0, /* 0 = mild, 1 = medium (), 2 = spicy () */
   
   /* Theme */
@@ -29,7 +29,7 @@ drupalgap.settings = {
   /* Logo */
   'logo':'',
   
-  /* Cache - Set to true when publishing app!*/
+  /* Cache - Set to true when publishing app! */
   'cache':{
     'theme_registry':true,
   },

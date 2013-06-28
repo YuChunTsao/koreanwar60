@@ -70,7 +70,7 @@ function koreanwar60_content_page(page) {
     var page_title = '';
     switch (page) {
       case 'home':
-        page_title = 'Heroes Remembered';
+        page_title = 'Korean War';
         break;
       case 'events':
         page_title = 'Events';
